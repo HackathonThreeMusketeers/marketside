@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "47AAC3725BAE625EC5D2D1C26C62ACA0CFEAA015",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "47AAC3725BAE625EC5D2D1C26C62ACA0CFEAA015" : 0,
+    "D478212A125340D7FB8E8AF4C1973CAD25D64CE3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C27F9542-8710-4D91-8B5D-6D088BF95F4D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "47AAC3725BAE625EC5D2D1C26C62ACA0CFEAA015" : "marketside\/",
+    "D478212A125340D7FB8E8AF4C1973CAD25D64CE3" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "marketside",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "marketside.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:HackathonThreeMusketeers\/marketside.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "47AAC3725BAE625EC5D2D1C26C62ACA0CFEAA015"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tsukalab\/SpringVacationPresentation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D478212A125340D7FB8E8AF4C1973CAD25D64CE3"
+    }
+  ]
+}

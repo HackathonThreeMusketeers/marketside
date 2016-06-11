@@ -1,0 +1,6 @@
+framework module Pods_marketside {
+  umbrella header "Pods-marketside-umbrella.h"
+
+  export *
+  module * { export * }
+}

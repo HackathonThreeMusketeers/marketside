@@ -10,8 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let request = Request()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        request.marketRegister()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

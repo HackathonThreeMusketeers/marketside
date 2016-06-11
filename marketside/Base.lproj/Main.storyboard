@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="373.5" y="452.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Notification Come Child View Controller-->
         <scene sceneID="YKH-KT-KeM">
             <objects>
-                <viewController id="pzo-Qj-3kt" sceneMemberID="viewController">
+                <viewController id="pzo-Qj-3kt" customClass="NotificationComeChildViewController" customModule="marketside" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pl1-Lt-yn3"/>
                         <viewControllerLayoutGuide type="bottom" id="W2l-dB-bZa"/>
