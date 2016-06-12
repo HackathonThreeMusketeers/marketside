@@ -16,7 +16,7 @@ class NotificationComeChildViewController: UIViewController,CBCentralManagerDele
     
     var items_name: NSMutableArray = NSMutableArray()
     var items_count: NSMutableArray = NSMutableArray()
-
+    
     @IBOutlet weak var itemListTableView: UITableView!
     
     
@@ -28,7 +28,7 @@ class NotificationComeChildViewController: UIViewController,CBCentralManagerDele
         
         // Delegateを設定.
         itemListTableView.delegate = self
-
+        
         
         myCentralManager = CBCentralManager(delegate: self, queue: nil, options: nil)
         
@@ -85,8 +85,10 @@ class NotificationComeChildViewController: UIViewController,CBCentralManagerDele
         if (name == nil) {
             name = "no name";
         }else{
-            if(rssi >= -50){
-                request.getOrderList(name!,callBackClosure: setitems)
+            if(rssi >= -70){
+                if(name == "Chipolo-8143FB38"){
+                    request.getOrderList(name!,callBackClosure: setitems)
+                }
             }
         }
     }
