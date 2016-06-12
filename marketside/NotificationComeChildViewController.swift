@@ -9,13 +9,27 @@
 import UIKit
 import CoreBluetooth
 
-class NotificationComeChildViewController: UIViewController,CBCentralManagerDelegate {
+class NotificationComeChildViewController: UIViewController,CBCentralManagerDelegate, UITableViewDataSource, UITableViewDelegate {
     
     var myCentralManager: CBCentralManager!
     let request = Request()
     
+    var items_name: NSMutableArray = NSMutableArray()
+    var items_count: NSMutableArray = NSMutableArray()
+
+    @IBOutlet weak var itemListTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // DataSourceの設定.
+        itemListTableView.dataSource = self
+        
+        // Delegateを設定.
+        itemListTableView.delegate = self
+
+        
         myCentralManager = CBCentralManager(delegate: self, queue: nil, options: nil)
         
         // Do any additional setup after loading the view.
@@ -71,12 +85,38 @@ class NotificationComeChildViewController: UIViewController,CBCentralManagerDele
         if (name == nil) {
             name = "no name";
         }else{
-            if(rssi >= -70){
-                request.getOrderList(name!)
+            if(rssi >= -50){
+                request.getOrderList(name!,callBackClosure: setitems)
             }
         }
     }
     
+    func setitems(items_count:NSMutableArray,items_name:NSMutableArray){
+        self.items_count = items_count
+        self.items_name = items_name
+        
+        print(self.items_count)
+        
+        itemListTableView.reloadData()
+    }
+    
+    //Table Viewのセルの数を指定
+    func tableView(table: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items_count.count
+    }
+    
+    //各セルの要素を設定する
+    func tableView(table: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        // tableCell の ID で UITableViewCell のインスタンスを生成
+        let cell:SelectedOrderTableViewCell = table.dequeueReusableCellWithIdentifier("tableCell", forIndexPath: indexPath) as! SelectedOrderTableViewCell
+        
+        let selectOrderCellData = SelectOrderCellData(item_name: items_name[indexPath.row] as! String, item_count: items_count[indexPath.row] as! String)
+        
+        cell.setCell(selectOrderCellData)
+        
+        return cell
+    }
     
     /*
      // MARK: - Navigation

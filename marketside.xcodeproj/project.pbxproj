@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D273A771D0D072A00F529E3 /* SelectOrderCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D273A761D0D072A00F529E3 /* SelectOrderCellData.swift */; };
+		0D273A791D0D073B00F529E3 /* SelectedOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D273A781D0D073B00F529E3 /* SelectedOrderTableViewCell.swift */; };
 		0DEE05DC1D0CAE9600A646B1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE05DB1D0CAE9600A646B1 /* Request.swift */; };
 		0DEE05DE1D0CB57D00A646B1 /* NotificationComeChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE05DD1D0CB57D00A646B1 /* NotificationComeChildViewController.swift */; };
 		0DEE05E01D0CBEA200A646B1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE05DF1D0CBEA200A646B1 /* SwiftyJSON.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		0C5B114AB0F482BCB0FE13E9 /* Pods-marketside.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marketside.debug.xcconfig"; path = "Pods/Target Support Files/Pods-marketside/Pods-marketside.debug.xcconfig"; sourceTree = "<group>"; };
+		0D273A761D0D072A00F529E3 /* SelectOrderCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectOrderCellData.swift; sourceTree = "<group>"; };
+		0D273A781D0D073B00F529E3 /* SelectedOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedOrderTableViewCell.swift; sourceTree = "<group>"; };
 		0DEE05DB1D0CAE9600A646B1 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		0DEE05DD1D0CB57D00A646B1 /* NotificationComeChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationComeChildViewController.swift; sourceTree = "<group>"; };
 		0DEE05DF1D0CBEA200A646B1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -127,7 +131,9 @@
 				2C97BC1C1D0C3E8600D2BBE0 /* ViewController.swift */,
 				0DEE05DB1D0CAE9600A646B1 /* Request.swift */,
 				0DEE05DD1D0CB57D00A646B1 /* NotificationComeChildViewController.swift */,
+				0D273A761D0D072A00F529E3 /* SelectOrderCellData.swift */,
 				0DEE05DF1D0CBEA200A646B1 /* SwiftyJSON.swift */,
+				0D273A781D0D073B00F529E3 /* SelectedOrderTableViewCell.swift */,
 				2C97BC1E1D0C3E8600D2BBE0 /* Main.storyboard */,
 				2C97BC211D0C3E8600D2BBE0 /* Assets.xcassets */,
 				2C97BC231D0C3E8600D2BBE0 /* LaunchScreen.storyboard */,
@@ -451,7 +457,9 @@
 				2C97BC1D1D0C3E8600D2BBE0 /* ViewController.swift in Sources */,
 				0DEE05DC1D0CAE9600A646B1 /* Request.swift in Sources */,
 				0DEE05DE1D0CB57D00A646B1 /* NotificationComeChildViewController.swift in Sources */,
+				0D273A791D0D073B00F529E3 /* SelectedOrderTableViewCell.swift in Sources */,
 				0DEE05E01D0CBEA200A646B1 /* SwiftyJSON.swift in Sources */,
+				0D273A771D0D072A00F529E3 /* SelectOrderCellData.swift in Sources */,
 				2C97BC1B1D0C3E8600D2BBE0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

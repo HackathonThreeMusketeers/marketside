@@ -29,7 +29,7 @@ class Request: NSObject {
             }
     }
     
-    func getOrderList(uuid: NSString){
+    func getOrderList(uuid: NSString, callBackClosure:(items_count: NSMutableArray, items_name: NSMutableArray)->Void){
         
         Alamofire.request(.GET,baseURL+"shop/"+baseUUID + "/" + (uuid as String))
             .validate()
@@ -42,12 +42,14 @@ class Request: NSObject {
                 var items_count: NSMutableArray = NSMutableArray()
                 var items_name: NSMutableArray = NSMutableArray()
                 
-
-                print(json)
+                json["data"].forEach{ (_, json) in
+                    items_count.addObject(json["count"].stringValue)
+                    items_name.addObject(json["name"].stringValue)
+                }
                 
+                print(items_count)
                 
-                //callBackClosure(items_id: items_id,items_name: items_name)
-        }
-        
+                callBackClosure(items_count: items_count, items_name: items_name)
     }
+}
 }
